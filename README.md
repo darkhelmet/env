@@ -20,7 +20,7 @@ Easy environment variables for Go
 
     env.Float("F") // Panic if not present
     env.FloatDefault("F", 1.0)
-    env.FloatDefaultF("F", func() float { return 5.5 })
+    env.FloatDefaultF("F", func() float64 { return 5.5 })
 
 # License
 
