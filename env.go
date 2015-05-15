@@ -124,7 +124,7 @@ func BoolDefault(key string, def bool) bool {
 	sVal := StringDefault(key, strconv.FormatBool(def))
 	val, err := strconv.ParseBool(sVal)
 	if err != nil {
-		return val
+		return def
 	}
-	return def
+	return val
 }
